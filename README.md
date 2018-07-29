@@ -3,6 +3,7 @@ Shopping List app written using the MERN  Javascript stack
 
 ## To Run The App
 - Run ```npm run dev``` - it'll run the server and client concurrently
+- Add your own connection string to a Mongo client in ```./config/keys.js```
 
 ## Requirements
 - NodeJs
