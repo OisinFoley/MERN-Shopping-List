@@ -28,8 +28,8 @@ class ShoppingList extends Component {
       <Container>
         <ListGroup>
           <TransitionGroup className="shopping-list">
-            {items.map(({ id, name }) => (
-              <CSSTransition key={id} timeout={500} classNames="fade">
+            {items.map(({ _id, name }) => (
+              <CSSTransition key={_id} timeout={500} classNames="fade">
                 <ListGroupItem>
                   <Button 
                   className="remove-btn"
@@ -43,7 +43,7 @@ class ShoppingList extends Component {
                   // }}
 
                   //bind is used to pass param to function
-                  onClick={this.onDeleteClick.bind(this, id)}
+                  onClick={this.onDeleteClick.bind(this, _id)}
                   >
                     &times;
                   </Button>
